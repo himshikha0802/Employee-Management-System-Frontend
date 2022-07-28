@@ -17,6 +17,7 @@ const ViewEmployee = () => {
   }, [])
 
   const columns = [
+
      {
        name: 'Name',
        selector: (row) => row.name

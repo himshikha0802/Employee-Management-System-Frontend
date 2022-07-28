@@ -80,14 +80,7 @@ const EditEmployee = () => {
             onChange={handleChange}
             placeholder="..."
           />
-           <CFormLabel>Department</CFormLabel>
-          <CFormInput
-            type="text"
-            name="department"
-            value={employee.department}
-            onChange={handleChange}
-            placeholder="..."
-          />
+
            <CFormLabel>Email</CFormLabel>
           <CFormInput
             type="text"

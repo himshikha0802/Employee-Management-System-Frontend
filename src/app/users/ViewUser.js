@@ -17,27 +17,26 @@ const ViewUser = () => {
   }, [])
 
   const columns = [
+     {
+       name: 'name',
+       selector: (row) => row.fullName
+     },
+     {
+       name: 'address',
+       selector: (row) => row.address,
+       sortable: true
+     },
+     {
+         name: 'age',
+         selector: (row) => row.age,
+         sortable: true
+       },
+       {
+        name: 'gender',
+        selector: (row) => row.gender,
+        sortable: true
+      },
 
-    {
-      name: 'Username',
-      selector: (row) => row.username,
-      sortable: true,
-    },
-    {
-      name: 'Name',
-      selector: (row) => row.fullName,
-      sortable: true,
-    },
-    {
-      name: 'Address',
-      selector: (row) => row.address,
-      sortable: true,
-    },
-    {
-      name: 'Age',
-      selector: (row) => row.age,
-      sortable: true,
-    },
     {
       name: 'Action',
       cell: (row) => (
@@ -51,18 +50,19 @@ const ViewUser = () => {
       ),
     },
   ]
-
   const handleDelete = (id) => {
-    console.log('Deleting users' + id)
+    console.log('Deleting users ' + id)
     deleteUser(id)
       .then((res) => {
-        console.log('User deleted successfully')
+        console.log('Users deleted successfully')
         window.location.reload(false)
       })
       .catch((error) => {
-        console.log('User deletion failed')
+        console.log('Users deletion failed')
       })
   }
+
+
   const loadUser = () => {
     listUser()
       .then((res) => res.data)
@@ -84,7 +84,7 @@ const ViewUser = () => {
         </CModalHeader>
         <CModalBody>
           Deleted user are lost permanently. <br />
-          Are you sure , you want to delete user?
+          Are you sure , you want to delete user ?
         </CModalBody>
         <CModalFooter>
           <CButton color="secondary" onClick={() => setDeleteModal({ visible: false })}>

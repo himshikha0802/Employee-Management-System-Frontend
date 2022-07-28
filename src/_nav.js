@@ -25,45 +25,6 @@ const _nav = [
   },
   {
     component: CNavGroup,
-    name: 'Roles',
-    to: '/roles',
-    icon: <CIcon icon={cilUser} customClassName="nav-icon" />,
-    items: [
-      {
-         component: CNavItem,
-         name: 'Add Roles',
-         to: '/roles/add',
-     },
-    {
-         component: CNavItem,
-       name: 'View Roles',
-         to: '/roles',
-       },
-
-     ],
-  },
-  {
-    component: CNavGroup,
-    name: 'Users',
-    to: '/users/add',
-    icon: <CIcon icon={cilUser} customClassName="nav-icon" />,
-    items: [
-          {
-             component: CNavItem,
-             name: 'Add Users',
-             to: '/users/add',
-         },
-        {
-             component: CNavItem,
-           name: 'View Users',
-             to: '/users',
-           },
-
-         ],
-
-  },
-  {
-    component: CNavGroup,
     name: 'Departments',
     to: '/departments',
     icon: <CIcon icon={cilUser} customClassName="nav-icon" />,
@@ -102,6 +63,46 @@ const _nav = [
      ],
   },
 
+
+  {
+    component: CNavGroup,
+    name: 'Roles',
+    to: '/roles',
+    icon: <CIcon icon={cilUser} customClassName="nav-icon" />,
+    items: [
+      {
+         component: CNavItem,
+         name: 'Add Roles',
+         to: '/roles/add',
+     },
+    {
+         component: CNavItem,
+       name: 'View Roles',
+         to: '/roles',
+       },
+
+     ],
+  },
+  {
+    component: CNavGroup,
+    name: 'Users',
+    to: '/users/add',
+    icon: <CIcon icon={cilUser} customClassName="nav-icon" />,
+    items: [
+          {
+             component: CNavItem,
+             name: 'Add Users',
+             to: '/users/add',
+         },
+        {
+             component: CNavItem,
+           name: 'View Users',
+             to: '/users',
+           },
+
+         ],
+
+  },
 
   {
     component: CNavGroup,

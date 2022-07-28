@@ -68,6 +68,17 @@ const EditUser = () => {
             onChange={handleChange}
           />
         </div>
+        <div className="mb-3">
+          <CFormLabel>Gender</CFormLabel>
+          <CFormInput
+            type="text"
+            placeholder="male/female"
+            name="gender"
+            value={user.gender}
+            onChange={handleChange}
+          />
+        </div>
+
 
         <div className="mb-3">
           <CFormLabel>Age</CFormLabel>

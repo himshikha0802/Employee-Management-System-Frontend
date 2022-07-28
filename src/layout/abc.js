@@ -4,9 +4,9 @@
  import image from 'src/assets/images/imgss.png'
  const FirstPage=()=>
  {
-  return <div>
-  <img src = {image} width='1160px' height='590px' />
-</div>
+//   return <div>
+//   <img src = {image} width='1160px' height='590px' />
+// </div>
  }
  export default FirstPage
 

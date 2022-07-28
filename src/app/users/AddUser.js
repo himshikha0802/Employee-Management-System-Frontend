@@ -107,6 +107,16 @@ const AddUser = () => {
             onChange={handleChange}
           />
         </div>
+        <div className="mb-3">
+          <CFormLabel>Gender</CFormLabel>
+          <CFormInput
+            type="text"
+            placeholder="Enter your gender"
+            name="gender"
+            value={user.gender}
+            onChange={handleChange}
+          />
+        </div>
 
         <div className="mb-3">
           <CFormLabel>Address</CFormLabel>
